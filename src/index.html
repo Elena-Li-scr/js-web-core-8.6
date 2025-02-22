@@ -11,11 +11,12 @@
   </head>
   <body>
     <div class="container">
+      <div class="menu-cover"></div>
       <div class="left">
         <div class="menu-cover"></div>
-        <div class="menu-form">
+        <div class="menu-form menu-form-mail">
           <div class="menu-form__icons">
-            <div class="icons close-menu2">
+            <div class="icons close-mail">
               <img src="img/close.png" alt="close" />
             </div>
           </div>
@@ -38,7 +39,24 @@
             <span>обработку персональных данных</span> и соглашаетесь с нашей
             <span>политикой конфиденциальности</span>
           </p>
-          <img src="img/send.png" alt="send" />
+          <img src="img/send.png" alt="send" class="menu-form__send" />
+        </div>
+        <div class="menu-form menu-form-phone">
+          <div class="menu-form__icons">
+            <div class="icons close-phone">
+              <img src="img/close.png" alt="close" />
+            </div>
+          </div>
+          <h2 class="menu-form__header">Заказать звонок</h2>
+          <form action="">
+            <input type="tel" placeholder="Телефон" class="menu-form__input" />
+          </form>
+          <p class="menu-form-text"
+            >Нажимая “отправить”, вы даете согласие на
+            <span>обработку персональных данных</span> и соглашаетесь с нашей
+            <span>политикой конфиденциальности</span>
+          </p>
+          <img src="img/send.png" alt="send" class="menu-form__send" />
         </div>
         <div class="main-menu">
           <header class="main-menu__header">
@@ -64,10 +82,10 @@
           </nav>
           <footer class="menu-footer">
             <div class="menu-footer__icons">
-              <div class="icons">
+              <div class="icons icons--open-phone">
                 <img src="img/phone.png" alt="phone" />
               </div>
-              <div class="icons">
+              <div class="icons icons--open-mail">
                 <img src="img/mail.png" alt="main" />
               </div>
               <div class="icons">
@@ -275,52 +293,56 @@
         <div class="price">
           <div class="price-wrap">
             <h2 class="service-type__header">ЦЕНЫ НА УСЛУГИ</h2>
-            <div class="table-mbl-container">
-              <div class="table-mbl">
-                <h3>Ремонтные услуги</h3>
-                <p>Тестирование с выдачей технического заключения</p><br />
-                <h3>Цена</h3>
-                <p>Бесплатно</p><br />
-                <h3>Срок</h3>
-                <p>30-120 мин</p>
-                <img src="img/order.png" alt="order" />
+            <div class="swiper table-mbl-container">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--big">
+                  <h3>Ремонтные услуги</h3>
+                  <p>Тестирование с выдачей технического заключения</p><br />
+                  <h3>Цена</h3>
+                  <p>Бесплатно</p><br />
+                  <h3>Срок</h3>
+                  <p>30-120 мин</p>
+                  <img src="img/order.png" alt="order" />
+                </div>
+                <div class="swiper-slide swiper-slide--big">
+                  <h3>Ремонтные услуги</h3>
+                  <p>Диагностика</p><br />
+                  <h3>Цена</h3>
+                  <p>Бесплатно</p><br />
+                  <h3>Срок</h3>
+                  <p>30 мин</p>
+                  <img src="img/order.png" alt="order" />
+                </div>
+                <div class="swiper-slide swiper-slide--big">
+                  <h3>Ремонтные услуги</h3>
+                  <p>Замена дисплея</p><br />
+                  <h3>Цена</h3>
+                  <p>1 000 ₽</p><br />
+                  <h3>Срок</h3>
+                  <p>30-120 мин</p>
+                  <img src="img/order.png" alt="order" />
+                </div>
+                <div class="swiper-slide swiper-slide--big">
+                  <h3>Ремонтные услуги</h3>
+                  <p>Замена полифонического динамика</p><br />
+                  <h3>Цена</h3>
+                  <p>1 000 ₽</p><br />
+                  <h3>Срок</h3>
+                  <p>30-120 мин</p>
+                  <img src="img/order.png" alt="order" />
+                </div>
+                <div class="swiper-slide swiper-slide--big">
+                  <h3>Ремонтные услуги</h3>
+                  <p>Замена программного обеспечения</p><br />
+                  <h3>Цена</h3>
+                  <p>1 000 ₽</p><br />
+                  <h3>Срок</h3>
+                  <p>30-120 мин</p>
+                  <img src="img/order.png" alt="order" />
+                </div>
               </div>
-              <div class="table-mbl">
-                <h3>Ремонтные услуги</h3>
-                <p>Диагностика</p><br />
-                <h3>Цена</h3>
-                <p>Бесплатно</p><br />
-                <h3>Срок</h3>
-                <p>30 мин</p>
-                <img src="img/order.png" alt="order" />
-              </div>
-              <div class="table-mbl">
-                <h3>Ремонтные услуги</h3>
-                <p>Замена дисплея</p><br />
-                <h3>Цена</h3>
-                <p>1 000 ₽</p><br />
-                <h3>Срок</h3>
-                <p>30-120 мин</p>
-                <img src="img/order.png" alt="order" />
-              </div>
-              <div class="table-mbl">
-                <h3>Ремонтные услуги</h3>
-                <p>Замена полифонического динамика</p><br />
-                <h3>Цена</h3>
-                <p>1 000 ₽</p><br />
-                <h3>Срок</h3>
-                <p>30-120 мин</p>
-                <img src="img/order.png" alt="order" />
-              </div>
-              <div class="table-mbl">
-                <h3>Ремонтные услуги</h3>
-                <p>Замена программного обеспечения</p><br />
-                <h3>Цена</h3>
-                <p>1 000 ₽</p><br />
-                <h3>Срок</h3>
-                <p>30-120 мин</p>
-                <img src="img/order.png" alt="order" />
-              </div>
+              <br />
+              <div class="swiper-pagination"></div>
             </div>
             <div class="table-wrap">
               <div class="table-header">

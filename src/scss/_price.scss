@@ -11,43 +11,6 @@
   border-radius: 6px;
 }
 
-.table-mbl-container {
-  margin: 20px 30px;
-  display: flex;
-  overflow: scroll;
-  width: 100%;
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.table-mbl {
-  position: relative;
-  padding: 15px;
-  margin: 10px;
-  min-width: 260px;
-  border-radius: 6px;
-  background-color: $second-bg;
-
-  h3 {
-    font-size: 14px;
-    font-weight: 500;
-    color: $main-button-color;
-  }
-
-  p {
-    font-size: 14px;
-    line-height: 18px;
-  }
-
-  img {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-  }
-}
-
 .price-note {
   margin: 10px 30px;
   font-size: 14px;

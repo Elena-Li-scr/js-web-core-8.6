@@ -38,6 +38,11 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: flex-start;
+  h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: $main-button-color;
+  }
   img {
     align-self: flex-end;
   }
