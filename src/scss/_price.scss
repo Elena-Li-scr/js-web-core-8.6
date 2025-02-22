@@ -1,0 +1,133 @@
+.price {
+  width: 100%;
+  border-bottom: 1px solid $border-color;
+  padding-bottom: 20px;
+}
+
+.table-container {
+  background-color: $second-bg;
+  padding: 0px 20px;
+  margin: 30px;
+  border-radius: 6px;
+}
+
+.table-mbl-container {
+  margin: 20px 30px;
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.table-mbl {
+  position: relative;
+  padding: 15px;
+  margin: 10px;
+  min-width: 260px;
+  border-radius: 6px;
+  background-color: $second-bg;
+
+  h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: $main-button-color;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  img {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
+.price-note {
+  margin: 10px 30px;
+  font-size: 14px;
+  line-height: 20px;
+}
+.offer {
+  position: relative;
+  margin-left: 30px;
+  width: 200px;
+
+  a {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    color: $main-text-color;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  img {
+    position: absolute;
+    left: 105px;
+    bottom: -3px;
+  }
+}
+
+.table-wrap {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .table-wrap {
+    display: block;
+  }
+
+  .table-mbl-container {
+    display: none;
+  }
+  .table {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    border-bottom: 2px solid $line-color;
+    align-items: center;
+    padding: 15px 0px;
+
+    img {
+      justify-self: flex-end;
+    }
+
+    p {
+      font-size: 14px;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+
+  .table-header {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    background-color: $main-bg;
+    color: $main-button-color;
+    margin: 30px;
+    padding: 0px 20px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+  .price-note {
+    max-width: 50%;
+  }
+
+  .offer {
+    width: auto;
+    img {
+      left: 305px;
+      bottom: -2px;
+    }
+  }
+}
