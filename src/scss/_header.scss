@@ -36,10 +36,9 @@
   &:hover {
     background-color: $icons-bg-hover;
   }
-}
-
-.icons:first-child {
-  margin-left: 0px;
+  &:first-child {
+    margin-left: 0px;
+  }
 }
 
 .icons--hiden {

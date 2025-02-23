@@ -12,7 +12,7 @@
   <body>
     <div class="container">
       <div class="menu-cover"></div>
-      <div class="left">
+      <aside class="aside">
         <div class="menu-cover"></div>
         <div class="menu-form menu-form-mail">
           <div class="menu-form__icons">
@@ -21,7 +21,7 @@
             </div>
           </div>
           <h2 class="menu-form__header">Обратная связь</h2>
-          <form action="">
+          <form action="#">
             <input type="text" placeholder="Имя" class="menu-form__input" />
             <input type="tel" placeholder="Телефон" class="menu-form__input" />
             <input
@@ -48,7 +48,7 @@
             </div>
           </div>
           <h2 class="menu-form__header">Заказать звонок</h2>
-          <form action="">
+          <form action="#">
             <input type="tel" placeholder="Телефон" class="menu-form__input" />
           </form>
           <p class="menu-form-text"
@@ -103,8 +103,8 @@
             </div>
           </footer>
         </div>
-      </div>
-      <div class="right">
+      </aside>
+      <main>
         <header class="header header--hiden">
           <div class="header__left">
             <nav class="icons show-menu">
@@ -135,7 +135,7 @@
             </div>
           </div>
         </header>
-        <main class="main">
+        <div class="main">
           <div class="main__wrapLarge">
             <h1 class="main__header">Услуги и сервисы</h1>
             <div class="main__icons">
@@ -183,7 +183,7 @@
               <img src="img/main.png" alt="main-picture" class="main__img" />
             </div>
           </div>
-        </main>
+        </div>
         <div class="service-type">
           <h2 class="service-type__header">РЕМОНТ ТЕХНИКИ РАЗЛИЧНЫХ БРЕНДОВ</h2>
           <div class="swiper">
@@ -236,13 +236,13 @@
             <br />
             <div class="swiper-pagination"></div>
           </div>
-          <button type="button" class="hide">
+          <button type="button" class="hide hide-show-button">
             <img src="img/hide.png" alt="hide" />
-            <p>Скрыть</p>
+            Скрыть все
           </button>
-          <button type="button" class="show">
+          <button type="button" class="show hide-show-button">
             <img src="img/show.png" alt="show" />
-            <p>Показать</p>
+            Показать все
           </button>
         </div>
         <div class="service-type">
@@ -281,13 +281,13 @@
             <br />
             <div class="swiper-pagination"></div>
           </div>
-          <button type="button" class="hide2">
+          <button type="button" class="hide2 hide-show-button">
             <img src="img/hide.png" alt="hide" />
-            <p>Скрыть</p>
+            Скрыть все
           </button>
-          <button type="button" class="show2">
+          <button type="button" class="show2 hide-show-button">
             <img src="img/show.png" alt="show" />
-            <p>Показать</p>
+            Показать все
           </button>
         </div>
         <div class="price">
@@ -295,7 +295,7 @@
             <h2 class="service-type__header">ЦЕНЫ НА УСЛУГИ</h2>
             <div class="swiper table-mbl-container">
               <div class="swiper-wrapper">
-                <div class="swiper-slide swiper-slide--big">
+                <div class="swiper-slide swiper-slide--big table-mbl">
                   <h3>Ремонтные услуги</h3>
                   <p>Тестирование с выдачей технического заключения</p><br />
                   <h3>Цена</h3>
@@ -304,7 +304,7 @@
                   <p>30-120 мин</p>
                   <img src="img/order.png" alt="order" />
                 </div>
-                <div class="swiper-slide swiper-slide--big">
+                <div class="swiper-slide swiper-slide--big table-mbl">
                   <h3>Ремонтные услуги</h3>
                   <p>Диагностика</p><br />
                   <h3>Цена</h3>
@@ -313,7 +313,7 @@
                   <p>30 мин</p>
                   <img src="img/order.png" alt="order" />
                 </div>
-                <div class="swiper-slide swiper-slide--big">
+                <div class="swiper-slide swiper-slide--big table-mbl">
                   <h3>Ремонтные услуги</h3>
                   <p>Замена дисплея</p><br />
                   <h3>Цена</h3>
@@ -322,7 +322,7 @@
                   <p>30-120 мин</p>
                   <img src="img/order.png" alt="order" />
                 </div>
-                <div class="swiper-slide swiper-slide--big">
+                <div class="swiper-slide swiper-slide--big table-mbl">
                   <h3>Ремонтные услуги</h3>
                   <p>Замена полифонического динамика</p><br />
                   <h3>Цена</h3>
@@ -331,7 +331,7 @@
                   <p>30-120 мин</p>
                   <img src="img/order.png" alt="order" />
                 </div>
-                <div class="swiper-slide swiper-slide--big">
+                <div class="swiper-slide swiper-slide--big table-mbl">
                   <h3>Ремонтные услуги</h3>
                   <p>Замена программного обеспечения</p><br />
                   <h3>Цена</h3>
@@ -395,17 +395,17 @@
           </div>
         </div>
         <footer class="footer">
-          <p
+          <p class="footer__development"
             >© 2019 CPS <br />
             Разработано командой Apesong
-          </p>
+          </p class="footer__policy">
           <p>Политика конфиденциальности</p>
-          <p
+          <p class="footer__info"
             >Информация, размещенная на данной странице, не является публичной
             офертой</p
           >
         </footer>
-      </div>
+      </main>
     </div>
   </body>
 </html>

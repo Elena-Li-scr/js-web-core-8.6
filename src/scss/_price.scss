@@ -11,6 +11,16 @@
   border-radius: 6px;
 }
 
+.table-mbl {
+  position: relative;
+  min-width: 260px;
+  img {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+  }
+}
+
 .price-note {
   margin: 10px 30px;
   font-size: 14px;
@@ -36,6 +46,10 @@
     position: absolute;
     left: 105px;
     bottom: -3px;
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
   }
 }
 
@@ -59,6 +73,10 @@
 
     img {
       justify-self: flex-end;
+      &:hover {
+        cursor: pointer;
+        opacity: 0.8;
+      }
     }
 
     p {

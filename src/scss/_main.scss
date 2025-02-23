@@ -19,15 +19,12 @@
 
 .main__row {
   display: flex;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  overflow: scroll;
   margin: 20px;
+  overflow: scroll;
   width: 100%;
-}
-
-.main__row::-webkit-scrollbar {
-  display: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .main__button {
@@ -41,12 +38,11 @@
   border: none;
   background-color: $main-bg;
   margin: 0px 10px;
-}
-
-.main__button:hover {
-  background-color: $second-bg;
-  border: 2px solid $border-hover;
-  border-radius: 6px;
+  &:hover {
+    background-color: $second-bg;
+    border: 2px solid $border-hover;
+    border-radius: 6px;
+  }
 }
 
 .main__text {
@@ -122,7 +118,8 @@
   }
 
   .main__button {
-    width: auto;
+    min-width: auto;
+    padding: 10px 15px;
   }
 }
 .expand {

@@ -8,7 +8,7 @@
   p {
     font-size: 14px;
     color: $main-button-color;
-    margin: 30px;
+    margin: 10px 20px;
     text-align: center;
     line-height: 16px;
   }
@@ -19,14 +19,14 @@
     width: 100%;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    p {
-      &:first-child {
-        text-align: start;
-      }
+    padding: 20px 0px;
 
-      &:last-child {
-        text-align: end;
-      }
+    .footer__development {
+      text-align: start;
+    }
+
+    .footer__info {
+      text-align: end;
     }
   }
 }

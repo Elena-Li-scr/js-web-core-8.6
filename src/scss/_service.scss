@@ -31,6 +31,12 @@
   align-items: center;
   padding: 15px;
   margin-right: 15px;
+  img {
+    &:hover {
+      cursor: pointer;
+      opacity: 0.8;
+    }
+  }
 }
 
 .swiper-slide--big {
@@ -48,22 +54,14 @@
   }
 }
 
-button {
-  width: 88px;
+.hide-show-button {
+  width: 130px;
   height: 24px;
   margin-left: 30px;
   border: none;
   background-color: $main-bg;
   display: none;
-}
-
-button > p {
   font-size: 16px;
-}
-
-.hide,
-.hide2 {
-  display: none;
 }
 
 @media screen and (min-width: 768px) {
@@ -84,8 +82,16 @@ button > p {
   .swiper-pagination {
     display: none;
   }
+  .hide,
+  .hide2 {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+  }
 
-  button {
+  .show,
+  .show2 {
     display: flex;
     justify-content: space-between;
     align-items: center;

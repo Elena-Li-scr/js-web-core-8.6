@@ -50,14 +50,14 @@ let buttonHide2 = document.querySelector('.hide2')
 buttonHide2.addEventListener('click', hide2)
 
 function showMenu() {
-  document.querySelector('.left').style.display = 'block'
+  document.querySelector('.aside').style.display = 'block'
   document.querySelector('.menu-cover').style.display = 'block'
 }
 let showMenuButton = document.querySelector('.show-menu')
 showMenuButton.addEventListener('click', showMenu)
 
 function closeMenu() {
-  document.querySelector('.left').style.display = 'none'
+  document.querySelector('.aside').style.display = 'none'
   document.querySelector('.menu-cover').style.display = 'none'
 }
 let closeMenuButton = document.querySelector('.close-menu')
@@ -76,8 +76,10 @@ openMail.addEventListener('click', openMailMenu)
 
 function closeMailMenu() {
   document.querySelector('.menu-form').style.display = 'none'
-  document.querySelector('.menu-cover').style.display = 'none'
   document.querySelector('.main-menu').style.zIndex = '3'
+  if (window.innerWidth > 1350) {
+    document.querySelector('.menu-cover').style.display = 'none'
+  }
 }
 
 let closeMail = document.querySelector('.close-mail')
@@ -94,8 +96,10 @@ openPhone.addEventListener('click', openPhoneMenu)
 
 function closePhoneMenu() {
   document.querySelector('.menu-form-phone').style.display = 'none'
-  document.querySelector('.menu-cover').style.display = 'none'
   document.querySelector('.main-menu').style.zIndex = '3'
+  if (window.innerWidth > 1350) {
+    document.querySelector('.menu-cover').style.display = 'none'
+  }
 }
 
 let closePhone = document.querySelector('.close-phone')

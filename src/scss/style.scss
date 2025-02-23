@@ -63,7 +63,7 @@ body {
   position: relative;
 }
 
-.left {
+.aside {
   display: none;
 }
 
@@ -71,7 +71,7 @@ body {
   .container {
     display: flex;
   }
-  .left {
+  .aside {
     display: block;
   }
 }
